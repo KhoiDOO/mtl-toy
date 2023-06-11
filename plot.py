@@ -41,4 +41,4 @@ if __name__ == "__main__":
     if not os.path.exists(img_dir):
         os.mkdir(img_dir)
     
-    plot_results()
+    plot_results(img_dir=img_dir)
