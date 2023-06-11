@@ -33,7 +33,7 @@ def plot_results(img_dir:str):
                          task=0, # task == 0 meeas plot for both tasks
                          traj=[t1[method][:t],t2[method][:t],t3[method][:t]],
                          plotbar=(method == "cagrad"),
-                         name=f"./imgs/toy_{method}_{t}")
+                         name=f"./imgs/{method}/{t}")
 
 if __name__ == "__main__":
     
