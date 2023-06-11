@@ -1,17 +1,11 @@
-from copy import deepcopy
-from mpl_toolkits.mplot3d import Axes3D
-from matplotlib import cm, ticker
-from matplotlib.colors import LogNorm
+from matplotlib import cm
 from tqdm import tqdm
-from scipy.optimize import minimize, Bounds, minimize_scalar
+from scipy.optimize import minimize_scalar
 
 import matplotlib.pyplot as plt
 import numpy as np
-import time
 import torch
 import torch.nn as nn
-import seaborn as sns
-import sys
 
 ################################################################################
 #
