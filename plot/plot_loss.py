@@ -16,7 +16,7 @@ def plot_loss(F, trajs, name="tmp"):
         "sgd" : "Adam",
         "pcgrad" : "PCGrad",
         "mgd" : "MGDA",
-        "cagrad" : "RGD (ours)",
+        "cagrad" : "CAGRAD",
     }
     for method in ["sgd", "mgd", "pcgrad", "cagrad"]:
         traj = trajs[method][::100]
