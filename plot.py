@@ -1,3 +1,5 @@
+import os
+
 import torch
 from torch import nn
 
@@ -29,4 +31,9 @@ def plot_results():
                          name=f"./imgs/toy_{method}_{t}")
 
 if __name__ == "__main__":
+    
+    img_dir = os.getcwd() + "/imgs"
+    if not os.path.exists(img_dir):
+        os.mkdir(img_dir)
+    
     plot_results()
