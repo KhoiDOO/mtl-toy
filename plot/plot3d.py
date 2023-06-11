@@ -21,7 +21,7 @@ def plot3d(F, xl=11):
     ax.grid(False)
     Yv = Ys.mean(1).view(n,n)
     surf = ax.plot_surface(X, Y, Yv.numpy(), cmap=cm.viridis)
-    print(Ys.mean(1).min(), Ys.mean(1).max())
+    # print(Ys.mean(1).min(), Ys.mean(1).max())
 
     ax.set_zticks([-16, -8, 0, 8])
     ax.set_zlim(-20, 10)
