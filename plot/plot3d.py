@@ -2,6 +2,7 @@ import torch
 from torch import nn
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib import cm
 
 def plot3d(F, xl=11):
     n = 500
